@@ -45,8 +45,13 @@ p {
   padding: 2px 0;
 }
 
-a:visited {
-  color: inherit;
+a {
+  color: var(--gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--red-main);
 }
 
 
@@ -78,7 +83,7 @@ header {
 ===================== */
 nav {
   margin: 20px auto;
-  width: var(--default-width);
+  max-width: var(--default-width);
   text-align: center;
 }
 
@@ -109,7 +114,63 @@ nav a:active {
   margin: 0px auto;
   padding: 0 10px;
   margin-bottom: 10px;
-  width: var(--default-width);
+  max-width: var(--default-width);
   border-top: 2px solid var(--red-main);
   border-bottom: 2px solid var(--red-main);
+}
+
+/* ==================
+      Project Card
+===================== */
+.projects {
+  margin: 20px 0;
+}
+
+.project {
+  margin: 20px 0;
+  padding-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-gap: 20px;
+  border-bottom: 1px solid var(--gray);
+}
+.project:last-child {
+  border-bottom: none;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project-description {
+  padding-bottom: 10px;
+}
+.project-description p {
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.project-description a {
+  margin-right: 16px;
+}
+.project-description a:hover {
+  text-decoration: underline;
+}
+.project-name {
+  font-size: 1.4rem;
+  color: var(--red-main);
+}
+
+.project-tools {
+  margin: 8px 0;
+}
+.project-tools div {
+  margin: 2px 4px;
+  padding: 2px 8px;
+  display: inline-block;
+  background-color: var(--red-main);
+  border-radius: 4px;
+  color: var(--tan);
+  text-align: center;
+  font-size: 0.9rem;
 }
