@@ -8,6 +8,7 @@ import Resume from './Resume';
 import Programming from './Programming';
 import OtherWork from './OtherWork';
 import Contact from './Contact';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/otherwork/" component={OtherWork} />
         <Route path="/contact/" component={Contact} />
       </Router>
+      <Footer></Footer>
     </div>
   );
 }

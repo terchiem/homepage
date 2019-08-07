@@ -113,7 +113,6 @@ nav a:active {
 .page {
   margin: 0px auto;
   padding: 0 10px;
-  margin-bottom: 10px;
   max-width: var(--default-width);
   border-top: 2px solid var(--red-main);
   border-bottom: 2px solid var(--red-main);
@@ -173,4 +172,34 @@ nav a:active {
   color: var(--tan);
   text-align: center;
   font-size: 0.9rem;
+}
+
+
+
+/* ==================
+        Footer
+===================== */
+footer {
+  max-width: var(--default-width);
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 0.8rem;
+}
+
+footer ul {
+  text-align: right;
+}
+
+footer li {
+  padding: 0 10px;
+  display: inline-block;
+  border-right: 1px solid var(--gray);
+}
+footer li:last-child {
+  border-right: none;
+}
+
+.copyright {
+  color: var(--gray);
 }
