@@ -11,16 +11,20 @@ import Contact from './Contact';
 function App() {
   return (
     <div className="App">
+      <header>
+        <div className="header-img">
+          
+        </div>
+      </header>
+      
       <Router>
         <Navbar></Navbar>
-
         <Route path="/" exact component={About} />
         <Route path="/about/" component={About} />
         <Route path="/resume/" component={Resume} />
         <Route path="/programming/" component={Programming} />
         <Route path="/otherwork/" component={OtherWork} />
         <Route path="/contact/" component={Contact} />
-
       </Router>
     </div>
   );

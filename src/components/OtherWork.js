@@ -2,7 +2,9 @@ import React from 'react';
 
 function OtherWorks() {
   return (
-    <p>I'm the OtherWorks page!</p>
+    <div className="page">
+      <p>I'm the OtherWorks page!</p>
+    </div>
   )
 }
 
