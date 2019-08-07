@@ -18,9 +18,13 @@
 
 body {
   margin: 0;
-  background-color: var(--tan);
+  /* height: 100vh; */
   color: var(--black);
-
+  background-color: var(--tan);
+  background-image: url('/assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -50,19 +54,32 @@ a:visited {
         Header
 ===================== */
 header {
-  margin: 0 auto;
-  height: 300px;
-  width: var(--default-width);
+  margin: 10px auto;
+  width: 500px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 4px;
+}
+.header-name {
+  padding: 4px 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--red-main);
+}
+.header-webdev {
+  padding: 4px;
   background-color: var(--red-main);
+  font-size: 18px;
+  color: var(--tan);
 }
 
 /* ==================
         Navbar
 ===================== */
 nav {
-  margin: 10px auto;
+  margin: 20px auto;
   width: var(--default-width);
-  text-align: right;
+  text-align: center;
 }
 
 nav li {
@@ -90,6 +107,8 @@ nav a:active {
 ===================== */
 .page {
   margin: 0px auto;
+  padding: 0 10px;
+  margin-bottom: 10px;
   width: var(--default-width);
   border-top: 2px solid var(--red-main);
   border-bottom: 2px solid var(--red-main);
