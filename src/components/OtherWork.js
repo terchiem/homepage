@@ -1,21 +1,93 @@
 import React from 'react';
 
-function OtherWorks() {
-  return (
-    <div className="page other-works">
-      <section id="animation">
-        <h3>Animation</h3>
-      </section>
+class OtherWorks extends React.Component {
+  constructor() {
+    super();
+    this.state = { 
+      currentImg: '',
+      open: false 
+    };
+  }
 
-      <section id="drawing">
-        <h3>Drawing</h3>
-      </section>
+  handleClick = (event) => {
+    this.setState(
+      {
+        currentImg: event.currentTarget.querySelector('img').src,
+        open: true
+      }, () => document.addEventListener('click', this.closeOverlay)
+    );
+  }
 
-      <section id="painting">
-        <h3>Painting</h3>
-      </section>
-    </div>
-  )
+  closeOverlay = () => {
+    this.setState(
+      {
+        currentImg: '',
+        open: false
+      }, () => document.removeEventListener('click', this.closeOverlay)
+    );
+  }
+
+  render() {
+    return (
+      <div className="page other-works">
+        <div className={`image-overlay ${this.state.open ? 'open' : ''}`}>
+          <div className="image-overlay-inner">
+            <img src={this.state.currentImg} />
+          </div>
+        </div>
+
+        <section id="animation">
+          <h3>Animation</h3>
+        </section>
+
+        <section id="drawing">
+          <h3>Drawing</h3>
+
+          <div className="art-container">
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/200" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/800x250" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/150x300" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/250" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+          </div>
+
+        </section>
+
+        <section id="painting">
+          <h3>Painting</h3>
+          <div className="art-container">
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/200" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/800x250" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/150x300" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+            <div className="gallery-item" onClick={this.handleClick}>
+              <img src="https://via.placeholder.com/250" />
+              <div className="gallery-item-overlay"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  }
 }
 
 export default OtherWorks;

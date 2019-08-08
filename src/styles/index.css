@@ -293,10 +293,71 @@ section {
   color: var(--red-main);
 }
 
-/*============== Sections*/
+/*============= Sections */
 .other-works section {
-  height: 500px;
-  border: 1px solid red;
+  min-height: 400px;
+}
+.art-container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-auto-rows: 200px;
+  grid-gap: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1;
+  border: 1px solid var(--gray);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*============== Overlay */
+.gallery-item-overlay {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-color: var(--red-main);
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.gallery-item:hover > .gallery-item-overlay {
+  opacity: 0.5;
+}
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000000b3;
+  z-index: 2;
+  display: none;
+}
+.image-overlay.open {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.image-overlay-inner {
+  background-color: var(--tan);
+  max-width: 700px;
+  padding: 20px;
+}
+
+.image-overlay img {
+  width: 100%;
 }
 
 /* ==================
