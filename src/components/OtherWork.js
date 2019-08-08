@@ -38,6 +38,16 @@ class OtherWorks extends React.Component {
 
         <section id="animation">
           <h3>Animation</h3>
+          <div className="demo-reel">
+            <iframe 
+              title="Animation Demo Reel"
+              src="https://player.vimeo.com/video/169491739" 
+              width="640" 
+              height="564" 
+              frameborder="0" 
+              allowfullscreen>
+            </iframe>
+          </div>
         </section>
 
         <section id="drawing">
