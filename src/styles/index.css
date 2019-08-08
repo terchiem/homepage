@@ -2,6 +2,7 @@
   --red-main: #e85a4f;
   --red-secondary: #e98074;
   --black: #696762;
+  --light-gray: #a5a39e;
   --gray: #8e8d8a;
   --tan: #eae7dc;
   --tan-dark: #d8c3a5;
@@ -14,6 +15,10 @@
  -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
          box-sizing: border-box;
+}
+
+html { 
+  margin-left: calc(100vw - 100%); 
 }
 
 body {
@@ -109,7 +114,7 @@ nav a:active {
 ===================== */
 .page {
   margin: 0px auto;
-  padding: 20px 10px;
+  padding: 20px 14px;
   min-height: 400px;
   max-width: var(--default-width);
   border-top: 2px solid var(--red-main);
@@ -166,6 +171,66 @@ nav a:active {
   color: var(--tan);
   text-align: center;
   font-size: 0.85rem;
+}
+
+/* ==================
+        Resume
+===================== */
+section {
+  margin-bottom: 30px;
+}
+.resume h3 {
+  font-size: 1.6rem;
+  color: var(--red-main);
+  border-bottom: 1px solid var(--gray);
+}
+.resume h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.resume p {
+  margin-top: 4px;
+}
+.resume ul {
+  padding: 0 14px;
+  color: var(--gray);
+}
+.resume li {
+  margin: 6px 0;
+}
+.resume span {
+  color: var(--red-secondary);
+  font-weight: bold;
+}
+
+.resume-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.resume-other {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+.resume-other h5 {
+  margin-top: 4px;
+  font-size: 1.1rem;
+}
+
+.download {
+  display: inline-block;
+  padding: 6px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 2px solid var(--red-main);
+  color: var(--black);
+  font-weight: 800;
+  transition: all 0.2s ease;
+}
+.download:hover {
+  background-color: var(--red-main);
+  color: var(--tan);
 }
 
 /* ==================
