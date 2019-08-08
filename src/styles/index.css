@@ -121,6 +121,17 @@ nav a:active {
   border-bottom: 2px solid var(--red-main);
 }
 
+.page h3 {
+  font-size: 1.6rem;
+  color: var(--red-main);
+  border-bottom: 1px solid var(--gray);
+}
+
+.page h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
 /* ==================
       Project Card
 ===================== */
@@ -179,15 +190,7 @@ nav a:active {
 section {
   margin-bottom: 30px;
 }
-.resume h3 {
-  font-size: 1.6rem;
-  color: var(--red-main);
-  border-bottom: 1px solid var(--gray);
-}
-.resume h4 {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
+
 .resume p {
   margin-top: 4px;
 }
@@ -252,6 +255,49 @@ section {
   padding-right: 30px;
 }
 
+/* ==================
+      Other Work
+===================== */
+/*======== Dropdown Menu */
+.dropdown-menu-items {
+  margin-top: 8px;
+  position: absolute;
+  background-color: var(--tan);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease;
+}
+.dropdown-menu-items li {
+  margin: 0 10px;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid var(--gray);
+  border-right: none;
+}
+.dropdown-menu-items li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu-visible .dropdown-menu-nav {
+  color: var(--red-main);
+}
+.dropdown-menu-visible .dropdown-menu-items {
+  max-height: 100%;
+}
+
+.dropdown-menu-nav {
+  color: var(--gray);
+  cursor: pointer;
+}
+.dropdown-menu-nav:hover {
+  color: var(--red-main);
+}
+
+/*============== Sections*/
+.other-works section {
+  height: 500px;
+  border: 1px solid red;
+}
 
 /* ==================
         Footer

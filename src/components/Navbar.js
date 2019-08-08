@@ -1,4 +1,6 @@
 import React from 'react';
+
+import DropDown from './DropDown';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -15,7 +17,7 @@ function Navbar() {
           <Link to="/programming/">Programming</Link>
         </li>
         <li>
-          <Link to="/otherwork/">Other Work</Link>
+          <DropDown display="Other Work" />
         </li>
         <li>
           <Link to="/contact/">Contact</Link>
