@@ -112,7 +112,8 @@ nav a:active {
 ===================== */
 .page {
   margin: 0px auto;
-  padding: 0 10px;
+  padding: 20px 10px;
+  min-height: 400px;
   max-width: var(--default-width);
   border-top: 2px solid var(--red-main);
   border-bottom: 2px solid var(--red-main);
@@ -121,10 +122,6 @@ nav a:active {
 /* ==================
       Project Card
 ===================== */
-.projects {
-  margin: 20px 0;
-}
-
 .project {
   margin: 20px 0;
   padding-bottom: 16px;
@@ -164,16 +161,34 @@ nav a:active {
   margin: 8px 0;
 }
 .project-tools div {
-  margin: 2px 4px;
+  margin: 4px;
   padding: 2px 8px;
   display: inline-block;
   background-color: var(--red-main);
   border-radius: 4px;
   color: var(--tan);
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
+/* ==================
+        Contacts
+===================== */
+.contacts {
+  text-align: center;
+}
+.contacts-header {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.contacts-list {
+  margin: 20px auto;
+  font-size: 3rem;
+}
+.contacts-list li {
+  display: inline-block;
+  padding-right: 30px;
+}
 
 
 /* ==================
