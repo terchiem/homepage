@@ -1,5 +1,7 @@
 import React from 'react';
 
+import drawings from '../page-resources/other-list';
+
 class OtherWorks extends React.Component {
   constructor() {
     super();
@@ -35,6 +37,13 @@ class OtherWorks extends React.Component {
   }
 
   render() {
+    const drawItems = drawings.map((drawing, i) => (
+      <div className="gallery-item" onClick={this.handleClick} key={i}>
+        <img src={drawing.src} alt={drawing.description}/>
+        <div className="gallery-item-overlay"></div>
+      </div>
+    ));
+
     return (
       <div className="page other-works">
         <div className={`image-overlay ${this.state.open ? 'open' : ''}`}>
@@ -48,7 +57,7 @@ class OtherWorks extends React.Component {
           <div className="demo-reel">
             <iframe 
               title="Animation Demo Reel"
-              src="https://player.vimeo.com/video/169491739" 
+              src="https://player.vimeo.com/video/169491739?color=e85a4f" 
               width="640" 
               height="564">
             </iframe>
@@ -59,45 +68,7 @@ class OtherWorks extends React.Component {
           <h3>Drawing</h3>
 
           <div className="art-container">
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/200" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/800x250" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/150x300" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/250" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-          </div>
-
-        </section>
-
-        <section id="painting">
-          <h3>Painting</h3>
-          <div className="art-container">
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/200" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/800x250" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/150x300" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
-            <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/250" alt=""/>
-              <div className="gallery-item-overlay"></div>
-            </div>
+            {drawItems}
           </div>
         </section>
       </div>

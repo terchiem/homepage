@@ -1,13 +1,13 @@
 import React from 'react';
 import Project from './Project';
 
-import projects from '../project-list';
+import projects from '../page-resources/project-list';
 
 class Programming extends React.Component {
 
   render() {
-    const projectList = projects.map((project) => {
-      return <Project data={project}></Project>
+    const projectList = projects.map((project, i) => {
+      return <Project data={project} key={i}></Project>
     })
 
     return (

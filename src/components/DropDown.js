@@ -44,9 +44,6 @@ class DropDown extends React.Component {
             <li>
               <Link to="/otherwork#drawing" smooth>Drawing</Link>
             </li>
-            <li>
-              <Link to="/otherwork#painting" smooth>Painting</Link>
-            </li>
           </ul>
         </div>
       </div>

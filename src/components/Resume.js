@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { workList, educationList, skillList } from '../resume-list';
+import { workList, educationList, skillList } from '../page-resources/resume-list';
 
 function Resume() {
-  const workItems = workList.map(job => {
-    const tasks = job.description.map(task => <li>{task}</li>);
+  const workItems = workList.map((job, i) => {
+    const tasks = job.description.map((task, i) => <li key={i}>{task}</li>);
 
     return (
-      <div className="resume-item">
+      <div className="resume-item" key={i}>
         <h4>{job.role} — <span>{job.company}</span> ({job.date})</h4>
         <ul>
           {tasks}
@@ -16,14 +16,14 @@ function Resume() {
     )
   })
 
-  const schoolItems = educationList.map(school => (
-    <div className="resume-item">
+  const schoolItems = educationList.map((school, i) => (
+    <div className="resume-item" key={i}>
       <h4><span>{school.name}</span> ({school.date})</h4>
       <ul><li>{school.description}</li></ul>
     </div>
   ))
 
-  const skillItems = skillList.map(skill => <li>{skill}</li>)
+  const skillItems = skillList.map((skill, i) => <li key={i}>{skill}</li>)
 
   return (
     <div className="page resume">

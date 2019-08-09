@@ -2,7 +2,7 @@ import React from 'react';
 
 function Project(props) {
   const { name, description, tools, image, git, link } = props.data;
-  const toolList = tools.map((tool) => <div>{tool}</div>);
+  const toolList = tools.map((tool, i) => <div key={i}>{tool}</div>);
 
   return (
     <li className="project">
