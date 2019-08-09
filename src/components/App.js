@@ -11,25 +11,38 @@ import Contact from './Contact';
 import Footer from './Footer';
 import ErrorPage from './ErrorPage';
 
-function App() {
-  return (
-    <div className="App">
-      <Header></Header>
-      <Router>
-        <Navbar></Navbar>
-        <Switch>
-          <Route path="/" exact component={About} />
-          <Route path="/about/" component={About} />
-          <Route path="/resume/" component={Resume} />
-          <Route path="/programming/" component={Programming} />
-          <Route path="/otherwork/" component={OtherWork} />
-          <Route path="/contact/" component={Contact} />
-          <Route component={ErrorPage} />
-        </Switch>
-      </Router>
-      <Footer></Footer>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { menuActive: false }
+  }
+
+  setMenuActive = (state) => {
+    this.setState(state);
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header></Header>
+        <Router>
+          <Navbar menuActive={this.state.menuActive}></Navbar>
+          <Switch>
+            <Route path="/" exact component={About} />
+            <Route path="/about/" component={About} />
+            <Route path="/resume/" component={Resume} />
+            <Route path="/programming/" component={Programming} />
+            <Route path="/otherwork/" 
+              render={(props) => <OtherWork {...props } 
+              setMenuActive={this.setMenuActive} />} />
+            <Route path="/contact/" component={Contact} />
+            <Route component={ErrorPage} />
+          </Switch>
+        </Router>
+        <Footer></Footer>
+      </div>
+    );
+  }
 }
 
 export default App;

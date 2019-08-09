@@ -1,26 +1,28 @@
 import React from 'react';
 
 import DropDown from './DropDown';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-function Navbar() {
+function Navbar(props) {
+
+
   return (
     <nav>
       <ul>
         <li>
-          <Link to="/about/">About</Link>
+          <NavLink activeClassName="nav-active" to="/about/">About</NavLink>
         </li>
         <li>
-          <Link to="/resume/">Resume</Link>
+          <NavLink activeClassName="nav-active" to="/resume/">Resume</NavLink>
         </li>
         <li>
-          <Link to="/programming/">Programming</Link>
+          <NavLink activeClassName="nav-active" to="/programming/">Programming</NavLink>
         </li>
         <li>
-          <DropDown display="Other Work" />
+          <DropDown menuActive={props.menuActive} display="Other Work" />
         </li>
         <li>
-          <Link to="/contact/">Contact</Link>
+          <NavLink activeClassName="nav-active" to="/contact/">Contact</NavLink>
         </li>
       </ul>
     </nav>

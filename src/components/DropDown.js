@@ -28,7 +28,8 @@ class DropDown extends React.Component {
     return (
       <div onClick={this.showMenu} className={`dropdown-menu 
       ${this.state.visible ? 'dropdown-menu-visible' : ''}`}>
-        <div className="dropdown-menu-nav">
+        <div className={`dropdown-menu-nav 
+        ${this.props.menuActive ? 'nav-active' : ''}`}>
           {this.props.display}
         </div>
 

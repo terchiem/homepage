@@ -27,12 +27,19 @@ class OtherWorks extends React.Component {
     );
   }
 
+  componentDidMount() {
+    this.props.setMenuActive({menuActive: true})
+  }
+  componentWillUnmount() {
+    this.props.setMenuActive({menuActive: false})
+  }
+
   render() {
     return (
       <div className="page other-works">
         <div className={`image-overlay ${this.state.open ? 'open' : ''}`}>
           <div className="image-overlay-inner">
-            <img src={this.state.currentImg} />
+            <img src={this.state.currentImg} alt=""/>
           </div>
         </div>
 
@@ -43,9 +50,7 @@ class OtherWorks extends React.Component {
               title="Animation Demo Reel"
               src="https://player.vimeo.com/video/169491739" 
               width="640" 
-              height="564" 
-              frameborder="0" 
-              allowfullscreen>
+              height="564">
             </iframe>
           </div>
         </section>
@@ -55,19 +60,19 @@ class OtherWorks extends React.Component {
 
           <div className="art-container">
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/200" />
+              <img src="https://via.placeholder.com/200" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/800x250" />
+              <img src="https://via.placeholder.com/800x250" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/150x300" />
+              <img src="https://via.placeholder.com/150x300" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/250" />
+              <img src="https://via.placeholder.com/250" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
           </div>
@@ -78,19 +83,19 @@ class OtherWorks extends React.Component {
           <h3>Painting</h3>
           <div className="art-container">
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/200" />
+              <img src="https://via.placeholder.com/200" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/800x250" />
+              <img src="https://via.placeholder.com/800x250" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/150x300" />
+              <img src="https://via.placeholder.com/150x300" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
             <div className="gallery-item" onClick={this.handleClick}>
-              <img src="https://via.placeholder.com/250" />
+              <img src="https://via.placeholder.com/250" alt=""/>
               <div className="gallery-item-overlay"></div>
             </div>
           </div>
