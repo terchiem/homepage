@@ -1,15 +1,11 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 import Header from './Header';
 import Navbar from './Navbar';
-import About from './About';
-import Resume from './Resume';
-import Programming from './Programming';
-import OtherWork from './OtherWork';
-import Contact from './Contact';
+import Page from './Page';
 import Footer from './Footer';
-import ErrorPage from './ErrorPage';
 
 class App extends React.Component {
   constructor() {
@@ -27,17 +23,7 @@ class App extends React.Component {
         <Header></Header>
         <Router>
           <Navbar menuActive={this.state.menuActive}></Navbar>
-          <Switch>
-            <Route path="/" exact component={About} />
-            <Route path="/about/" component={About} />
-            <Route path="/resume/" component={Resume} />
-            <Route path="/programming/" component={Programming} />
-            <Route path="/otherwork/" 
-              render={(props) => <OtherWork {...props } 
-              setMenuActive={this.setMenuActive} />} />
-            <Route path="/contact/" component={Contact} />
-            <Route component={ErrorPage} />
-          </Switch>
+          <Page setMenuActive={this.setMenuActive} />
         </Router>
         <Footer></Footer>
       </div>

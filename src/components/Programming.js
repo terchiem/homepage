@@ -11,8 +11,8 @@ class Programming extends React.Component {
     })
 
     return (
-      <div className="page">
-        <ul className="projects">
+      <div className="projects">
+        <ul>
           {projectList}
         </ul>
       </div>

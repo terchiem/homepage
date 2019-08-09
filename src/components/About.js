@@ -2,7 +2,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className="page">
+    <div className="about">
       <p>Welcome!</p>
       <p>
         My name is Terry and I am a self-taught web developer with a traditional art background. I originally went to school to study animation and illustration which transitioned into a career creating 3D animations for games and videos. Eventually I found myself stuck in a creative rut and stepped away to find a way to reinvent myself. 

@@ -26,10 +26,10 @@ function Resume() {
   const skillItems = skillList.map((skill, i) => <li key={i}>{skill}</li>)
 
   return (
-    <div className="page resume">
+    <div className="resume">
       <a href="https://drive.google.com/open?id=135kb6Y3Opm67rOjUC8ctwxktV6QlBhU9">
         <div className="download">
-          Download PDF
+          Download Resume as PDF
         </div>
       </a>
 

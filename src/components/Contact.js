@@ -6,7 +6,7 @@ import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return (
-    <div className="page contacts">
+    <div className="contacts">
       <h3 className="contacts-header">CONTACTS</h3>
       <ul className="contacts-list">
         <li>

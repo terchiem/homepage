@@ -11,6 +11,13 @@ class OtherWorks extends React.Component {
     };
   }
 
+  componentDidMount() {
+    this.props.setMenuActive({menuActive: true})
+  }
+  componentWillUnmount() {
+    this.props.setMenuActive({menuActive: false})
+  }
+
   handleClick = (event) => {
     this.setState(
       {
@@ -29,13 +36,6 @@ class OtherWorks extends React.Component {
     );
   }
 
-  componentDidMount() {
-    this.props.setMenuActive({menuActive: true})
-  }
-  componentWillUnmount() {
-    this.props.setMenuActive({menuActive: false})
-  }
-
   render() {
     const drawItems = drawings.map((drawing, i) => (
       <div className="gallery-item" onClick={this.handleClick} key={i}>
@@ -45,7 +45,7 @@ class OtherWorks extends React.Component {
     ));
 
     return (
-      <div className="page other-works">
+      <div className="other-works">
         <div className={`image-overlay ${this.state.open ? 'open' : ''}`}>
           <div className="image-overlay-inner">
             <img src={this.state.currentImg} alt=""/>

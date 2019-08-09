@@ -412,3 +412,41 @@ footer li:last-child {
 .copyright {
   color: var(--gray);
 }
+
+/* ==================
+   React Transitions
+===================== */
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.fade-exit {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: all 0.3s ease-in;
+  transform: translateY(50%);
+}
+
+.transition-group {
+  position: relative;
+}
+
+/* .route-group {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+} */
