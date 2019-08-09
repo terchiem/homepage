@@ -255,6 +255,9 @@ section {
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
+h3.contacts-header {
+  border-bottom: none;
+}
 .contacts-list {
   margin: 20px auto;
   font-size: 3rem;
@@ -416,6 +419,10 @@ footer li:last-child {
 /* ==================
    React Transitions
 ===================== */
+.transition-group {
+  position: relative;
+}
+
 .fade-enter {
   opacity: 0.01;
 }
@@ -439,14 +446,3 @@ footer li:last-child {
   transition: all 0.3s ease-in;
   transform: translateY(50%);
 }
-
-.transition-group {
-  position: relative;
-}
-
-/* .route-group {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-} */

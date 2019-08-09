@@ -19,19 +19,17 @@ function Page({ location, setMenuActive }) {
           timeout={{ enter: 300, exit: 300 }}
           classNames="fade"
         >
-          <section className="route-group">
-            <Switch location={location}>
-              <Route path="/" exact component={About} />
-              <Route path="/about/" component={About} />
-              <Route path="/resume/" component={Resume} />
-              <Route path="/programming/" component={Programming} />
-              <Route path="/otherwork/" 
-                render={(props) => <OtherWork {...props } 
-                setMenuActive={setMenuActive} />} />
-              <Route path="/contact/" component={Contact} />
-              <Route component={ErrorPage} />
-            </Switch>
-          </section>
+          <Switch location={location}>
+            <Route path="/" exact component={About} />
+            <Route path="/about/" component={About} />
+            <Route path="/resume/" component={Resume} />
+            <Route path="/programming/" component={Programming} />
+            <Route path="/otherwork/" 
+              render={(props) => <OtherWork {...props } 
+              setMenuActive={setMenuActive} />} />
+            <Route path="/contact/" component={Contact} />
+            <Route component={ErrorPage} />
+          </Switch>
         </CSSTransition>
       </TransitionGroup>
     </div>
