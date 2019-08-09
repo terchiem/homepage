@@ -23,7 +23,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header></Header>
         <Router>
           <Navbar menuActive={this.state.menuActive}></Navbar>

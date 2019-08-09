@@ -56,7 +56,6 @@ a:hover {
   color: var(--red-main);
 }
 
-
 /* ==================
         Header
 ===================== */
@@ -71,13 +70,19 @@ header {
   padding: 4px 0;
   font-size: 48px;
   font-weight: bold;
-  color: var(--red-main);
 }
 .header-webdev {
   padding: 4px;
   background-color: var(--red-main);
   font-size: 18px;
   color: var(--tan);
+}
+
+.header-name a {
+  color: var(--red-main);
+}
+.header-name a:hover {
+  color: var(--red-secondary);
 }
 
 /* ==================
