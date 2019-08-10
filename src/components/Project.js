@@ -4,9 +4,11 @@ function Project(props) {
   const { name, description, tools, image, git, link } = props.data;
   const toolList = tools.map((tool, i) => <div key={i}>{tool}</div>);
 
+  const src = require(`../assets/projects/${image}.JPG`);
+
   return (
     <li className="project">
-      <img src={image} alt={name} />
+      <img src={src} alt={name} />
       <div className="project-description">
         <div className="project-name">
           {name}

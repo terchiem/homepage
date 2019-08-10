@@ -4,7 +4,7 @@ function Header() {
   return (
   <header>
     <h1 className="header-name">
-      <a href="/">
+      <a href="http://www.terrychiem.com">
         TERRY CHIEM
       </a>
     </h1>

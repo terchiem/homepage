@@ -1,31 +1,31 @@
 const drawings = [
   {
     description: 'Life Drawing',
-    src: '/assets/other/life1.jpg'
+    src: 'life1'
   },
   {
     description: 'Life Drawing',
-    src: '/assets/other/life2.jpg'
+    src: 'life2'
   },
   {
     description: 'Life Drawing',
-    src: '/assets/other/life3.jpg'
+    src: 'life3'
   },
   {
     description: 'Animal Study',
-    src: '/assets/other/animal1.jpg'
+    src: 'animal1'
   },
   {
     description: 'Animal Study',
-    src: '/assets/other/animal2.jpg'
+    src: 'animal2'
   },
   {
     description: 'Animal Study',
-    src: '/assets/other/animal3.jpg'
+    src: 'animal3'
   },
   {
     description: 'Sketchbook Figures',
-    src: '/assets/other/sketch1.jpg'
+    src: 'sketch1'
   },
 ]
 

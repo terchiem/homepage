@@ -21,6 +21,7 @@ function Page({ location, setMenuActive }) {
         >
           <Switch location={location}>
             <Route path="/" exact component={About} />
+            <Route path="/homepage/" component={About} />
             <Route path="/about/" component={About} />
             <Route path="/resume/" component={Resume} />
             <Route path="/programming/" component={Programming} />

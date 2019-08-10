@@ -37,12 +37,15 @@ class OtherWorks extends React.Component {
   }
 
   render() {
-    const drawItems = drawings.map((drawing, i) => (
-      <div className="gallery-item" onClick={this.handleClick} key={i}>
-        <img src={drawing.src} alt={drawing.description}/>
-        <div className="gallery-item-overlay"></div>
-      </div>
-    ));
+    const drawItems = drawings.map((drawing, i) => {
+      const image = require(`../assets/other/${drawing.src}.jpg`);
+      return (
+        <div className="gallery-item" onClick={this.handleClick} key={i}>
+          <img src={image} alt={drawing.description}/>
+          <div className="gallery-item-overlay"></div>
+        </div>
+      )
+    });
 
     return (
       <div className="other-works">
