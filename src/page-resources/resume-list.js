@@ -55,6 +55,8 @@ export const educationList = [
 export const skillList = [
   'Javascript / ES6',
   'HTML / CSS',
+  'PHP',
+  'MySQL',
   'Ruby / Rails',
   'Python',
   'React',
