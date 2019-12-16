@@ -5,7 +5,8 @@ const projects = [
     tools: ["Sass", "HTML", "Javascript"],
     image: "cssloader",
     git: "",
-    link: "https://codepen.io/terchiem/full/bGNdGaJ"
+    link: "",
+    codepen: "https://codepen.io/terchiem/pen/bGNdGaJ"
   },
   {
     name: "YT Archive",
@@ -13,7 +14,8 @@ const projects = [
     tools: ["PHP", "MySQL", "CSS", "Javascript", "Full Stack"],
     image: "yt-archive",
     git: "https://github.com/terchiem/yt-archive",
-    link: "https://yt-archive.herokuapp.com/"
+    link: "https://yt-archive.herokuapp.com/",
+    codepen: ""
   },
   {
     name: "Portfolio Home Page",
@@ -21,7 +23,8 @@ const projects = [
     tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
     image: "homepage",
     git: "https://github.com/terchiem/homepage",
-    link: "https://terchiem.github.io/homepage/"
+    link: "https://terchiem.github.io/homepage/",
+    codepen: ""
   },
   {
     name: "Weather App",
@@ -29,7 +32,8 @@ const projects = [
     tools: ["Vue", "Javascript", "CSS", "HTML", "Front End"],
     image: "weatherapp",
     git: "https://github.com/terchiem/weather_app",
-    link: "https://terchiem.github.io/weather_app/"
+    link: "https://terchiem.github.io/weather_app/",
+    codepen: ""
   },
   {
     name: "Project/Task Tracker",
@@ -37,7 +41,8 @@ const projects = [
     tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
     image: "todoapp",
     git: "https://github.com/terchiem/todo_list_react",
-    link: "https://terchiem.github.io/todo_list_react/"
+    link: "https://terchiem.github.io/todo_list_react/",
+    codepen: ""
   },
   {
     name: "Tic-Tac-Toe",
@@ -45,7 +50,8 @@ const projects = [
     tools: ["Javascript", "CSS", "HTML", "Front End"],
     image: "tictactoe",
     git: "https://github.com/terchiem/js_tictactoe",
-    link: "https://terchiem.github.io/js_tictactoe/"
+    link: "https://terchiem.github.io/js_tictactoe/",
+    codepen: ""
   },
   {
     name: "Pomodoro Clock",
@@ -53,7 +59,8 @@ const projects = [
     tools: ["Javascript", "CSS", "HTML", "Front End"],
     image: "pomodoro",
     git: "https://github.com/terchiem/pomodoro_clock",
-    link: "https://terchiem.github.io/pomodoro_clock/"
+    link: "https://terchiem.github.io/pomodoro_clock/",
+    codepen: ""
   },
 ]
 
