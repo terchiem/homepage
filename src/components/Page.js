@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Switch, Route, withRouter } from "react-router-dom";
+import { Switch, Route, withRouter, Redirect } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import About from './About';
@@ -8,7 +8,6 @@ import Resume from './Resume';
 import Programming from './Programming';
 import OtherWork from './OtherWork';
 import Contact from './Contact';
-import ErrorPage from './ErrorPage';
 
 function Page({ location, setMenuActive }) {
   return (
@@ -20,16 +19,16 @@ function Page({ location, setMenuActive }) {
           classNames="fade"
         >
           <Switch location={location}>
-            <Route path="/" exact component={About} />
-            <Route path="/homepage/" component={About} />
-            <Route path="/about/" component={About} />
-            <Route path="/resume/" component={Resume} />
-            <Route path="/programming/" component={Programming} />
-            <Route path="/otherwork/" 
+            <Route exact path="/" component={About} />
+            <Route exact path="/homepage" component={About} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/resume" component={Resume} />
+            <Route exact path="/programming" component={Programming} />
+            <Route exact path="/otherwork" 
               render={(props) => <OtherWork {...props } 
               setMenuActive={setMenuActive} />} />
-            <Route path="/contact/" component={Contact} />
-            <Route component={ErrorPage} />
+            <Route exact path="/contact" component={Contact} />
+            <Redirect to="/" />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer>
       <div className="copyright">
-        © 2019 Terry Chiem
+        © 2020 Terry Chiem
       </div>
       <ul className="footer-links">
         <li>
