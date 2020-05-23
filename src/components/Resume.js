@@ -27,7 +27,7 @@ function Resume() {
 
   return (
     <div className="resume">
-      <a href="https://drive.google.com/open?id=135kb6Y3Opm67rOjUC8ctwxktV6QlBhU9">
+      <a href="https://drive.google.com/open?id=1E3Jb8JngyI7Uz_Fe8kzxDFatY_yjz4Ai">
         <div className="download">
           Download Resume as PDF
         </div>
@@ -44,22 +44,12 @@ function Resume() {
       </section>
 
       <section>
-        <div className="resume-other">
-          <div>
-            <h3>Skills</h3>
-            <ul>
-              {skillItems}
-            </ul>
-          </div>
-          <div>
-            <h3>Online Education</h3>
-            <h5>The Odin Project</h5>
-            <ul><li>Full Stack Ruby on Rails</li></ul>
-            <h5>Free Code Camp</h5>
-            <ul><li>Responsive Web Design, Javascript, Front End Libraries</li></ul>
-          </div>
+        <div>
+          <h3>Skills</h3>
+          <ul>
+            {skillItems}
+          </ul>
         </div>
-        
       </section>
     </div>
   )
