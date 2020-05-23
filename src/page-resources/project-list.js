@@ -1,5 +1,14 @@
 const projects = [
   {
+    name: "Jobly",
+    description: "A job searching app that I created while at Rithm School. Users can browse and search for companies or jobs. It utilizes a React Frontend and an Express Backend.",
+    tools: ["React", "Express", "PostgreSQL", "Full Stack"],
+    image: "jobly",
+    git: "https://github.com/terchiem/react-jobly",
+    link: "http://r15-jobly-frontend.herokuapp.com/",
+    codepen: ""
+  },
+  {
     name: "Single Element CSS Loaders",
     description: "A variety of loaders created with a single class on an element with a loader div wrapper. The animations are done entirely in CSS and utilizes the before and after pseudo classes to create additional animatable objects.",
     tools: ["Sass", "HTML", "Javascript"],
@@ -35,33 +44,33 @@ const projects = [
     link: "https://terchiem.github.io/weather_app/",
     codepen: ""
   },
-  {
-    name: "Project/Task Tracker",
-    description: "A to-do list app I made while learning to use React. It allows the user to create projects and fill them with to-do list items. I had previously made version of this app using pure Javascript and used that as a jumping off point to learn React. It made me see the light of shared states and letting React handle the DOM.",
-    tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
-    image: "todoapp",
-    git: "https://github.com/terchiem/todo_list_react",
-    link: "https://terchiem.github.io/todo_list_react/",
-    codepen: ""
-  },
-  {
-    name: "Tic-Tac-Toe",
-    description: "A game of Tic-Tac-Toe created with Javascript using modules and factories. The main goal of this project was to have as little global code as possible. This project definitely taught me the value of making code more modular.",
-    tools: ["Javascript", "CSS", "HTML", "Front End"],
-    image: "tictactoe",
-    git: "https://github.com/terchiem/js_tictactoe",
-    link: "https://terchiem.github.io/js_tictactoe/",
-    codepen: ""
-  },
-  {
-    name: "Pomodoro Clock",
-    description: "A browser timer for utilizing the Pomodoro Technique. One of my earliest projects that taught me how to work with intervals in Javascript and how to create a timer that toggles between two values.",
-    tools: ["Javascript", "CSS", "HTML", "Front End"],
-    image: "pomodoro",
-    git: "https://github.com/terchiem/pomodoro_clock",
-    link: "https://terchiem.github.io/pomodoro_clock/",
-    codepen: ""
-  },
+  // {
+  //   name: "Project/Task Tracker",
+  //   description: "A to-do list app I made while learning to use React. It allows the user to create projects and fill them with to-do list items. I had previously made version of this app using pure Javascript and used that as a jumping off point to learn React. It made me see the light of shared states and letting React handle the DOM.",
+  //   tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
+  //   image: "todoapp",
+  //   git: "https://github.com/terchiem/todo_list_react",
+  //   link: "https://terchiem.github.io/todo_list_react/",
+  //   codepen: ""
+  // },
+  // {
+  //   name: "Tic-Tac-Toe",
+  //   description: "A game of Tic-Tac-Toe created with Javascript using modules and factories. The main goal of this project was to have as little global code as possible. This project definitely taught me the value of making code more modular.",
+  //   tools: ["Javascript", "CSS", "HTML", "Front End"],
+  //   image: "tictactoe",
+  //   git: "https://github.com/terchiem/js_tictactoe",
+  //   link: "https://terchiem.github.io/js_tictactoe/",
+  //   codepen: ""
+  // },
+  // {
+  //   name: "Pomodoro Clock",
+  //   description: "A browser timer for utilizing the Pomodoro Technique. One of my earliest projects that taught me how to work with intervals in Javascript and how to create a timer that toggles between two values.",
+  //   tools: ["Javascript", "CSS", "HTML", "Front End"],
+  //   image: "pomodoro",
+  //   git: "https://github.com/terchiem/pomodoro_clock",
+  //   link: "https://terchiem.github.io/pomodoro_clock/",
+  //   codepen: ""
+  // },
 ]
 
 export default projects;
