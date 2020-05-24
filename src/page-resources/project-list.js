@@ -31,8 +31,8 @@ const projects = [
     description: "I designed this home page to be a single page application using React. My goal was to have a page with a simple design and making its content easy to navigate.",
     tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
     image: "homepage",
-    git: "http://www.terrychiem.com",
-    link: "https://terchiem.github.io/homepage/",
+    git: "https://github.com/terchiem/homepage/",
+    link: "http://terrychiem.com",
     codepen: ""
   },
   {
