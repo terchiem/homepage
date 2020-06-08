@@ -23,11 +23,18 @@ function Resume() {
     </div>
   ))
 
-  const skillItems = skillList.map((skill, i) => <li key={i}>{skill}</li>)
+  const skillItems = skillList.map((skill, i) => {
+    return (
+      <div className="resume-item" key={i}>
+        <h4>{skill.category}</h4>
+        <p>{skill.description}</p>
+      </div>
+    )
+  });
 
   return (
     <div className="resume">
-      <a href="https://drive.google.com/open?id=1E3Jb8JngyI7Uz_Fe8kzxDFatY_yjz4Ai">
+      <a href="https://drive.google.com/open?id=1_1cX7CPDvG34-GuEa3QYK-MHC04NzufH">
         <div className="download">
           Download Resume as PDF
         </div>
@@ -46,9 +53,7 @@ function Resume() {
       <section>
         <div>
           <h3>Skills</h3>
-          <ul>
-            {skillItems}
-          </ul>
+          {skillItems}
         </div>
       </section>
     </div>

@@ -1,25 +1,36 @@
 export const workList = [
   {
+    company: 'LiveStack',
+    role: 'Software Engineer Intern',
+    date: 'May 2020 - Jun 2020',
+    description: [
+      'Developed a form in which users can schedule flexible blocks of time for an event using React and Formik',
+      'Created a component to dynamically generate an outgoing request message based on form details',
+      'Expanded unit and integration tests for front end client and back end server'
+    ]
+  },
+  {
     company: 'Point Digital Finance',
     role: 'Processor',
-    date: 'January 2020 - February 2020',
+    date: 'Jan 2020 - Feb 2020',
     description: [
-      'Developed a layout to compile data from Salesforce and internal Underwrite system to share with outside partners and contractors'
+      'Developed a layout to compile data from Salesforce and internal Underwriting system to share with outside partners and contractors'
     ]
   },
   {
     company: 'Amazon Logistics',
     role: 'Sortation Associate',
-    date: 'October 2016 - December 2017',
+    date: 'Oct 2016 - Dec 2017',
     description: [
-      'Dispatcher: Assigned contract drivers their delivery routes, assisted contract drivers with technical and hardware issues regarding Amazon Flex app, processed returns on undeliverable packages',
-      'Problem Solver: Repacked damaged orders, resolved package issues, performed package cluster transfers'
+      'Assigned contract drivers their delivery routes',
+      'Advised contract drivers with technical and hardware issues regarding the Amazon Flex app',
+      'Analyzed and processed returns on undeliverable packages'
     ]
   },
   {
     company: 'Telegenics Inc.',
     role: 'Freelance Animator/Video Editor',
-    date: 'July 2015 - June 2017',
+    date: 'Jul 2015 - Jun 2017',
     description: [
       'Created video assets to support court case testimonials with an emphasis on precision',
       'Reconstructed accidents with 3D animation using data from police and witness reports',
@@ -29,18 +40,18 @@ export const workList = [
   {
     company: 'Zindagi Games',
     role: 'Freelance Animator',
-    date: 'April 2015 – October 2015',
+    date: 'Apr 2015 – Oct 2015',
     description: [
-      'Created 2D and 3D game animations for two mobile titles',
+      'Developed 2D and 3D game animations for two mobile game titles',
       'Maintained a schedule while working remotely under tight deadlines'
     ]
   },
   {
     company: 'Spark Unlimited',
     role: 'Animation Intern',
-    date: 'June 2013 – November 2013',
+    date: 'Jun 2013 – Nov 2013',
     description: [
-      'Developed 3D in-game and cinematic animations for Yaiba: Ninja Gaiden Z (PS3/360/PC)'
+      'Developed 3D in-game and cinematic animations for a video game project'
     ]
   }
 ]
@@ -48,24 +59,32 @@ export const workList = [
 export const educationList = [
   {
     name: 'Rithm School',
-    date: 'March 2020 - June 2020',
+    date: 'Mar 2020 - Jun 2020',
     description: 'Full Stack Web Development'
   },
   {
     name: 'De Anza Community College',
-    date: 'January 2018 - June 2019',
-    description: 'Certificate of Achievement - Programming in C++ / Java / Python'
+    date: 'Jan 2018 - Jun 2019',
+    description: 'Certification in Programming'
   },
   {
     name: 'San Jose State University',
-    date: 'August 2005 - June 2012',
+    date: 'Aug 2005 - Jun 2012',
     description: 'Bachelor of Fine Arts - Animation & Illustration'
   }
 ]
 
 export const skillList = [
-  'Languages: Javascript, Python, Ruby, HTML/CSS, C++, Java',
-  'Front End: React, Redux, Vue',
-  'Back End: Flask, Express, PHP, Ruby on Rails, PostgreSQL, MySQL',
-  'Other: Adobe Creative Suite, Autodesk Maya/Motionbuilder, Traditional Art Background',  
+  {
+    category: 'Languages',
+    description: 'Javascript, Python, CSS, HTML, SQL, PHP'
+  },
+  {
+    category: 'Tools & Frameworks',
+    description: 'React, Redux, Node.js, Express, Flask, PostgreSQL, MySQL'
+  },
+  {
+    category: 'Design & Animation',
+    description: 'Photooshop, After Effects, Premiere, Maya, MotionBuilder'
+  }
 ]
