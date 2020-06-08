@@ -23,7 +23,7 @@ function Page({ location, setMenuActive }) {
             <Route exact path="/homepage" component={About} />
             <Route exact path="/about" component={About} />
             <Route exact path="/resume" component={Resume} />
-            <Route exact path="/programming" component={Programming} />
+            <Route exact path="/projects" component={Programming} />
             <Route exact path="/otherwork" 
               render={(props) => <OtherWork {...props } 
               setMenuActive={setMenuActive} />} />

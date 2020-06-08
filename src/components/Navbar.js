@@ -16,7 +16,7 @@ function Navbar(props) {
           <NavLink activeClassName="nav-active" to="/resume/">Resume</NavLink>
         </li>
         <li>
-          <NavLink activeClassName="nav-active" to="/programming/">Programming</NavLink>
+          <NavLink activeClassName="nav-active" to="/projects/">Projects</NavLink>
         </li>
         <li>
           <DropDown menuActive={props.menuActive} display="Other Work" />
