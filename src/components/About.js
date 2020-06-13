@@ -5,10 +5,10 @@ function About() {
     <div className="about">
       <p>Welcome!</p>
       <p>
-        My name is Terry and I am a self-taught web developer with a traditional art background. I originally went to school to study animation and illustration which transitioned into a career creating 3D animations for games and videos. Eventually I found myself stuck in a creative rut and stepped away to find a way to reinvent myself. 
+        My name is Terry and I am an aspiring web developer with a background in traditional art. I originally went to school to study animation and illustration which transitioned into a career working as an animator and video producer on various projects. Throughout the years, I discovered that I really enjoyed the technical aspects of the job. I liked learning new technologies and techniques to solve the unique problems that each project presented.
       </p>
       <p>
-        I decided to take some programming classes at a community college and found out that I had a real knack for it. I realized that so many of the concepts I had learned in art also applied to programming. The importance of a strong design rather than its implementation was a principle that I had been so familiar with in my previous career. It has revitalized my passion for design and my goal is to find new ways to apply my old skills.
+        After dabbling with some programming classes at a community college and thoroughly enjoying the work, I decided to pursue a career change by attending a coding bootcamp. At Rithm School, I learned full stack development and was able to collaborate with other developers on a wide range of projects. Coding has revitalized my passion for learning and I am always looking for the opportunity to work with others and improve myself.
       </p>
     </div>
   )
