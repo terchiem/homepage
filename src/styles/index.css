@@ -17,8 +17,8 @@
          box-sizing: border-box;
 }
 
-html { 
-  margin-left: calc(100vw - 100%); 
+html {
+  margin-left: calc(100vw - 100%);
 }
 
 body {
@@ -191,6 +191,26 @@ nav a:active {
   color: var(--tan);
   text-align: center;
   font-size: 0.85rem;
+}
+
+/* ==================
+        About
+===================== */
+.about {
+  display: flex;
+}
+
+.about img {
+  margin: 20px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: -2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 1px 3px 2px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+  margin: 0 20px;
 }
 
 /* ==================

@@ -1,15 +1,19 @@
 import React from 'react';
+import photo from '../assets/photo.jpeg';
 
 function About() {
   return (
     <div className="about">
-      <p>Welcome!</p>
-      <p>
-        My name is Terry and I am an aspiring web developer with a background in traditional art. I originally went to school to study animation and illustration which transitioned into a career working as an animator and video producer on various projects. Throughout the years, I discovered that I really enjoyed the technical aspects of the job. I liked learning new technologies and techniques to solve the unique problems that each project presented.
-      </p>
-      <p>
-        After dabbling with some programming classes at a community college and thoroughly enjoying the work, I decided to pursue a career change by attending a coding bootcamp. At Rithm School, I learned full stack development and was able to collaborate with other developers on a wide range of projects. Coding has revitalized my passion for learning and I am always looking for the opportunity to work with others and improve myself.
-      </p>
+      <img src={photo} alt="Terry" />
+      <div className="about-text">
+        <p>Welcome!</p>
+        <p>
+          My name is Terry and I am a Full Stack developer with a background in art and design. I previously had a career as a 3D animator and video producer on various projects. Throughout the years, I discovered that I really enjoyed solving technical problems and learning how things worked.
+        </p>
+        <p>
+          At the beginning of this year, I decided to take the step of changing my career. I enrolled in Rithm School and for 4 months, I worked hard to become a confident Full Stack developer. Now I am looking for opportunities to collaborate with others and build great things.
+        </p>
+      </div>
     </div>
   )
 }
