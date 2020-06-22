@@ -1,6 +1,6 @@
 import React from 'react';
 
-import resume from '../assets/TerryChiem_Resume_2020.pdf';
+// import resume from '../assets/TerryChiem_Resume_2020.pdf';
 import { workList, educationList, skillList } from '../page-resources/resume-list';
 
 function Resume() {
@@ -35,7 +35,7 @@ function Resume() {
 
   return (
     <div className="resume">
-      <a href={resume} target="_blank">
+      <a href="https://drive.google.com/file/d/1omOH3jX3dxr_C34C_Q3i6bIMhQ0yMiyL/view?usp=sharing" target="_blank">
         <div className="download">
           Download Resume as PDF
         </div>
