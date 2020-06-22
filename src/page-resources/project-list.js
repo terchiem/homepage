@@ -1,7 +1,13 @@
 const projects = [
   {
     name: "Jobly",
-    description: "A job searching app that I created while at Rithm School. Users can browse and search for companies or jobs. It utilizes a React Frontend and an Express Backend.",
+    description: "A Full Stack application for job searching. Users can log in to browse and search for companies or jobs. It utilizes a React client and an Express server connected to a Postgres DB.",
+    details: [
+      "Front End done solo; Back End done with partner",
+      "Protected user routes through authorization/authentication middleware on the server and JWTokens on the client",
+      "Implemented live search feature using lodash to debounce AJAX calls",
+      "Utilized REST API for standard CRUD functionality on the server side"
+    ],
     tools: ["React", "Express", "PostgreSQL", "Full Stack"],
     image: "jobly",
     git: "https://github.com/terchiem/react-jobly",
@@ -10,7 +16,12 @@ const projects = [
   },
   {
     name: "YT Archive",
-    description: "A project that I used to learn PHP, MySQL and practice full-stack development. This site allows a user to search for videos published to YouTube in 2005 using the YouTube Data API. There is a quota usage limit (10,000 units per day) that needs to be considered when a single search will use up around 100-110 units. To mitigate that, the site first searches its own database for videos and then turns to the API when there aren't enough results to display. The videos retrieved from the API are then saved to the database for future searches.",
+    description: "A Full Stack application that allows a user to search for videos published to YouTube in the platform's first year of release.",
+    details: [
+      "Solo project",
+      "Searches are done through YouTube API calls and the results are then cached in a MySQL DB to help mitigate the API quota usage limit",
+      "Implemented pagination of search results"
+    ],
     tools: ["PHP", "MySQL", "CSS", "Javascript", "Full Stack"],
     image: "yt-archive",
     git: "https://github.com/terchiem/yt-archive",
@@ -20,6 +31,7 @@ const projects = [
   {
     name: "Single Element CSS Loaders",
     description: "A variety of loaders created with a single class on an element with a loader div wrapper. The animations are done entirely in CSS and utilizes the before and after pseudo classes to create additional animatable objects.",
+    details: [],
     tools: ["Sass", "HTML", "Javascript"],
     image: "cssloader",
     git: "",
@@ -29,6 +41,7 @@ const projects = [
   {
     name: "Portfolio Home Page",
     description: "I designed this home page to be a single page application using React. My goal was to have a page with a simple design and making its content easy to navigate.",
+    details: [],
     tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
     image: "homepage",
     git: "https://github.com/terchiem/homepage/",

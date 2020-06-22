@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Project(props) {
-  const { name, description, tools, image, git, link, codepen } = props.data;
+  const { name, description, details, tools, image, git, link, codepen } = props.data;
   const toolList = tools.map((tool, i) => <div key={i}>{tool}</div>);
+  const detailList = details.map((detail, i) => <li key={i}>{detail}</li>);
 
   const src = require(`../assets/projects/${image}.JPG`);
 
@@ -13,17 +14,24 @@ function Project(props) {
         <div className="project-name">
           {name}
         </div>
+
         <p>
           {description}
         </p>
+
+        <ul>
+          {detailList}
+        </ul>
+
+        <div className="project-tools">
+          {toolList}
+        </div>
 
         {link && <a href={link}>Live</a>}
         {git && <a href={git}>Github</a>}
         {codepen && <a href={codepen}>CodePen</a>}
       </div>
-      <div className="project-tools">
-        {toolList}
-      </div>
+
     </li>
   )
 }
