@@ -4,7 +4,9 @@ import photo from '../assets/photo.jpeg';
 function About() {
   return (
     <div className="about">
-      <img src={photo} alt="Terry" />
+      <div>
+        <img src={photo} alt="Terry" />
+      </div>
       <div className="about-text">
         <p>Welcome!</p>
         <p>
