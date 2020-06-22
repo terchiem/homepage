@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 function Contact() {
   return (
@@ -22,6 +22,11 @@ function Contact() {
         <li>
           <a href="https://github.com/terchiem/">
             <FontAwesomeIcon icon={faGithubSquare} size="lg" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/terrychiem">
+            <FontAwesomeIcon icon={faTwitterSquare} size="lg" />
           </a>
         </li>
       </ul>
