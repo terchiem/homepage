@@ -5,7 +5,7 @@ function Project(props) {
   const toolList = tools.map((tool, i) => <div key={i}>{tool}</div>);
   const detailList = details.map((detail, i) => <li key={i}>{detail}</li>);
 
-  const src = require(`../assets/projects/${image}.JPG`);
+  const src = require(`../assets/projects/${image}.jpg`);
 
   return (
     <li className="project">

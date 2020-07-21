@@ -8,7 +8,7 @@ const projects = [
       "Use of Redux to store data from API and Redux Saga for asynchronous actions"
     ],
     tools: ["React", "Redux", "CSS", "Javascript", "Front End"],
-    image: "country",
+    image: "world",
     git: "https://github.com/terchiem/rest-countries-api-react",
     link: "https://rest-countries-api-react.vercel.app/",
     codepen: ""
@@ -23,7 +23,7 @@ const projects = [
       "Utilized REST API for standard CRUD functionality on the server side"
     ],
     tools: ["React", "Express", "PostgreSQL", "Full Stack"],
-    image: "jobly",
+    image: "job",
     git: "https://github.com/terchiem/react-jobly",
     link: "http://r15-jobly-frontend.herokuapp.com/",
     codepen: ""
@@ -37,7 +37,7 @@ const projects = [
       "Implemented pagination of search results"
     ],
     tools: ["PHP", "MySQL", "CSS", "Javascript", "Full Stack"],
-    image: "yt-archive",
+    image: "archive",
     git: "https://github.com/terchiem/yt-archive",
     link: "https://yt-archive.herokuapp.com/",
     codepen: ""
@@ -47,7 +47,7 @@ const projects = [
     description: "A variety of loaders created with a single class on an element with a loader div wrapper. The animations are done entirely in CSS and utilizes the before and after pseudo classes to create additional animatable objects.",
     details: [],
     tools: ["Sass", "HTML", "Javascript"],
-    image: "cssloader",
+    image: "loader",
     git: "",
     link: "",
     codepen: "https://codepen.io/terchiem/pen/bGNdGaJ"
@@ -57,7 +57,7 @@ const projects = [
     description: "I designed this home page to be a single page application using React. My goal was to have a page with a simple design and making its content easy to navigate.",
     details: [],
     tools: ["React", "Javascript", "CSS", "HTML", "Front End"],
-    image: "homepage",
+    image: "portfolio",
     git: "https://github.com/terchiem/homepage/",
     link: "",
     codepen: ""
