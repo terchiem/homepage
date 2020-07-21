@@ -145,8 +145,8 @@ nav a:active {
       Project Card
 ===================== */
 .project {
-  margin: 20px 0;
-  padding-bottom: 16px;
+  margin: 24px 0;
+  padding-bottom: 24px;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-gap: 20px;
@@ -175,10 +175,18 @@ nav a:active {
   list-style-type: disc;
 }
 .project-description a {
+  display: inline-block;
+  padding: 2px 10px;
+  margin-top: 4px;
   margin-right: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--red-main);
+  color: var(--black);
+  transition: all 0.2s ease;
 }
 .project-description a:hover {
-  text-decoration: underline;
+  background-color: var(--red-main);
+  color: var(--tan);
 }
 .project-name {
   font-size: 1.4rem;
