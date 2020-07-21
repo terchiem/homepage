@@ -6,7 +6,6 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import About from './About';
 import Resume from './Resume';
 import Programming from './Programming';
-import OtherWork from './OtherWork';
 import Contact from './Contact';
 
 function Page({ location, setMenuActive }) {
@@ -24,9 +23,6 @@ function Page({ location, setMenuActive }) {
             <Route exact path="/about" component={About} />
             <Route exact path="/resume" component={Resume} />
             <Route exact path="/projects" component={Programming} />
-            <Route exact path="/otherwork" 
-              render={(props) => <OtherWork {...props } 
-              setMenuActive={setMenuActive} />} />
             <Route exact path="/contact" component={Contact} />
             <Redirect to="/" />
           </Switch>

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import DropDown from './DropDown';
 import { NavLink } from 'react-router-dom';
 
 function Navbar(props) {
@@ -17,10 +16,6 @@ function Navbar(props) {
         </li>
         <li>
           <NavLink activeClassName="nav-active" to="/projects/">Projects</NavLink>
-        </li>
-        <li>
-          <a href="https://terrychiem.blogspot.com/" target="_blank">Other Work</a>
-          {/* <DropDown menuActive={props.menuActive} display="Other Work" /> */}
         </li>
         <li>
           <NavLink activeClassName="nav-active" to="/contact/">Contact</NavLink>
