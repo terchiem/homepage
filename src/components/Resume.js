@@ -35,7 +35,7 @@ function Resume() {
 
   return (
     <div className="resume">
-      <a href="https://drive.google.com/file/d/1omOH3jX3dxr_C34C_Q3i6bIMhQ0yMiyL/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <a href="https://drive.google.com/file/d/1XI8nglD0S9tbJzIOmQYQ205BfAy6Hr4a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
         <div className="download">
           Download Resume as PDF
         </div>

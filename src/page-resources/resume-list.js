@@ -1,12 +1,22 @@
 export const workList = [
   {
+    company: 'The Collab Lab',
+    role: 'React Developer Intern',
+    date: 'Oct 2020 - Dec 2020',
+    description: [
+      'Collaborated on a distributed team of 4 developers to build a Progressive Web App using React, Cloud Firestore and Agile methodologies',
+      'Optimized the app for accessibility through user testing and audits',
+      'Participated in pair and mob programming, weekly demos and retrospectives'
+    ]
+  },
+  {
     company: 'LiveStack',
     role: 'Software Engineer Intern',
     date: 'May 2020 - Jun 2020',
     description: [
-      'Developed a form in which users can schedule flexible blocks of time for an event using React and Formik',
-      'Created a React component that dynamically generated an outgoing request message based on form details',
-      'Expanded unit and integration tests for front end client and back end server'
+      'Developed forms where users can schedule flexible blocks of time for an event using React and Formik with Yup for client-side validation',
+      'Created back end Express routes to receive and validate form data',
+      'Expanded unit and integration tests for client and server using Jest'
     ]
   },
   {
@@ -14,7 +24,8 @@ export const workList = [
     role: 'Processor',
     date: 'Jan 2020 - Feb 2020',
     description: [
-      'Designed a layout to compile data from Salesforce and internal Underwriting system to share with outside partners and contractors'
+      'Improved communications with outside partners and contractors by designing a process to compile data from Salesforce and other internal sources to share',
+      'Communicated with clients to request documents and provide information to ensure a positive experience during the application process'
     ]
   },
   {
@@ -22,9 +33,8 @@ export const workList = [
     role: 'Sortation Associate',
     date: 'Oct 2016 - Dec 2017',
     description: [
-      'Planned and organized delivery routes for contract drivers',
-      'Solved technical and hardware issues regarding the Amazon Flex app',
-      'Analyzed and processed returns on undeliverable packages'
+      'Solved technical and hardware issues for contract drivers regarding the Amazon Flex app to maintain a consistent delivery rate',
+      'Mentored new hires on best practices and safety around the work site'
     ]
   },
   {
@@ -32,9 +42,9 @@ export const workList = [
     role: 'Freelance Video Producer',
     date: 'Jul 2015 - Jun 2017',
     description: [
-      'Created video assets to support court case testimonials with an emphasis on precision',
-      'Reconstructed accidents with 3D animation using data from police and witness reports',
-      'Learned new skills and technologies to solve the unique problems that each case presented'
+      'Reconstructed auto accidents with 3D animation using data from police and witness reports with an emphasis on unbiased accuracy',
+      'Learned new tools and technologies to solve unique problems that each project presented',
+      'Consistently met tight deadlines while working remotely with minimal supervision'
     ]
   },
   {
@@ -42,8 +52,7 @@ export const workList = [
     role: 'Freelance Animator',
     date: 'Apr 2015 – Oct 2015',
     description: [
-      'Developed 2D and 3D game animations for two mobile game titles',
-      'Consistently met tight deadlines while working remotely with minimal supervision'
+      'Developed 2D and 3D game animations for two mobile game titles'
     ]
   },
   {
@@ -60,12 +69,12 @@ export const educationList = [
   {
     name: 'Rithm School',
     date: 'Mar 2020 - Jun 2020',
-    description: 'Full Stack Web Development'
+    description: '16 Week Full Stack Web Development Program'
   },
   {
     name: 'De Anza Community College',
     date: 'Jan 2018 - Jun 2019',
-    description: 'Certification in Programming'
+    description: 'Certification in Programming - Python'
   },
   {
     name: 'San Jose State University',
@@ -81,10 +90,10 @@ export const skillList = [
   },
   {
     category: 'Tools & Frameworks',
-    description: 'React, Redux, Node.js, Express, Flask, PostgreSQL, MySQL'
+    description: 'React, Redux, Node.js, Express, Flask, jQuery, PostgreSQL, MongoDB'
   },
   {
     category: 'Design & Animation',
-    description: 'Photoshop, After Effects, Premiere, Maya, MotionBuilder'
+    description: 'Adobe Creative Suite, Figma, Maya'
   }
 ]
